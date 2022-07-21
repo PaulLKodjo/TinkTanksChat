@@ -118,11 +118,12 @@
                                         HorizontalOptions="Start"
                                         VerticalOptions="FillAndExpand">
                                             <BoxView
+                                                
                                             BackgroundColor="#28B1FF"
-                                            CornerRadius="30"
+                                            CornerRadius="20"
                                             HorizontalOptions="FillAndExpand" />
                                             <Label
-                                            Margin="10"
+                                            Margin="20,10"
                                             LineBreakMode="CharacterWrap"
                                             Text="{Binding Message}"
                                             TextColor="White"
@@ -135,7 +136,9 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Grid
+
+
+            <!--<Grid
             Grid.Row="2"
             ColumnSpacing="0"
             RowSpacing="0">
@@ -156,9 +159,51 @@
                 HorizontalOptions="FillAndExpand"
                 Text="Send"
                 VerticalOptions="FillAndExpand" />
-            </Grid>
+            </Grid>-->
 
         </Grid>
+        <ContentView 
+            AbsoluteLayout.LayoutBounds="1,1,1,.1" 
+            AbsoluteLayout.LayoutFlags="All">
+            <Frame 
+                HasShadow="True"
+                Padding="5"
+                HorizontalOptions="FillAndExpand" 
+                VerticalOptions="FillAndExpand" 
+                BackgroundColor="Transparent">
+                <StackLayout 
+                    Orientation="Horizontal" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand" 
+                    Spacing="10" 
+                    Padding="10" 
+                    BackgroundColor="Transparent">
+                    <Entry 
+                        VerticalOptions="FillAndExpand" 
+                        HorizontalOptions="FillAndExpand" 
+                        HorizontalTextAlignment="Start"
+                        BackgroundColor="#f5f9fa"
+                Placeholder="Message"
+                PlaceholderColor="Transparent"
+                Text="{Binding Message}"
+                TextColor="Black"                        
+                        FontSize="Small">
+
+                    </Entry>
+                    <Button WidthRequest="80"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="End" 
+                        Text="Send" 
+                        Command="{Binding SendMessageCommand}"
+                                BackgroundColor="#404040"
+                        TextColor="White"
+                        CornerRadius="8"
+                        FontSize="Medium" 
+                        FontAttributes="Bold"/>
+                </StackLayout>
+            </Frame>
+        </ContentView>
+
         <ContentView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#cc000000" 
             IsVisible="{Binding IsConnected, Converter={StaticResource InverseBool}}" Padding="10,120">
             <Frame CornerRadius="15" BackgroundColor="WhiteSmoke" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
@@ -198,7 +243,7 @@
                             HorizontalOptions="Center" 
                             VerticalOptions="Center"/>
                     </Grid>
-                    
+
                 </StackLayout>
             </Frame>
         </ContentView>
