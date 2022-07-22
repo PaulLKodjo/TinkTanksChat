@@ -95,9 +95,9 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CardowaChat\CardowaChat.csproj">
+    <ProjectReference Include="..\TinkTanksChat\TinkTanksChat.csproj">
       <Project>{B9CDDD48-BE8E-43D5-86BF-0F3480002B28}</Project>
-      <Name>CardowaChat</Name>
+      <Name>TinkTanksChat</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

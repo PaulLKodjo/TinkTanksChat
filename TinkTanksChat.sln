@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardowaChat.Android", "CardowaChat\CardowaChat.Android\CardowaChat.Android.csproj", "{337DF575-D242-41D3-ABB9-011457C950A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinkTanksChat.Android", "TinkTanksChat\TinkTanksChat.Android\TinkTanksChat.Android.csproj", "{337DF575-D242-41D3-ABB9-011457C950A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardowaChat.iOS", "CardowaChat\CardowaChat.iOS\CardowaChat.iOS.csproj", "{302DEBF1-68D3-45A7-9407-CD7D7B887D7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinkTanksChat.iOS", "TinkTanksChat\TinkTanksChat.iOS\TinkTanksChat.iOS.csproj", "{302DEBF1-68D3-45A7-9407-CD7D7B887D7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardowaChat", "CardowaChat\CardowaChat\CardowaChat.csproj", "{DE8BB608-918C-45C3-900C-6767B92FB45D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinkTanksChat", "TinkTanksChat\TinkTanksChat\TinkTanksChat.csproj", "{DE8BB608-918C-45C3-900C-6767B92FB45D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
