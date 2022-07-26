@@ -4,7 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:converters="clr-namespace:BuildChat.Converters"
-    xmlns:local="clr-namespace:BuildChat"
+    xmlns:local="clr-namespace:BuildChat" xmlns:tkc="clr-namespace:TinkTanksChat"
     BackgroundColor="White">
 
     <ContentPage.Resources>
@@ -25,7 +25,7 @@
             FontSize="25"
             HorizontalOptions="FillAndExpand"
             HorizontalTextAlignment="Center"
-            Text="Tink Tanks"
+            Text="Trending Vibes"
                 FontAttributes="Bold"
             TextColor="White" />
             <Label
@@ -203,6 +203,10 @@
                 </StackLayout>
             </Frame>
         </ContentView>
+        <ContentView AbsoluteLayout.LayoutBounds="1,.88,1,.2" AbsoluteLayout.LayoutFlags="All">
+            <tkc:AdBanner Size="SmartBannerPortrait" HorizontalOptions="Fill" VerticalOptions="End"
+             AdUnitId="ca-app-pub-5539185599858824/1023821498"/>
+        </ContentView>
 
         <ContentView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#cc000000" 
             IsVisible="{Binding IsConnected, Converter={StaticResource InverseBool}}" Padding="10,120">
@@ -229,7 +233,6 @@
                         <Button 
                     BackgroundColor="#BB0E85F6"
                             IsEnabled="{Binding NotIsBusy,Mode=TwoWay}"
-                            IsVisible="{Binding NotIsBusy,Mode=TwoWay}"
                     Command="{Binding ConnectCommand}"
                     HorizontalOptions="FillAndExpand"
                     Text="Connect"
@@ -243,6 +246,7 @@
                             HorizontalOptions="Center" 
                             VerticalOptions="Center"/>
                     </Grid>
+                    <Label Text="Joining Chat ....." HorizontalOptions="Center" TextColor="Black" FontSize="Small" IsVisible="{Binding IsBusy, Mode=TwoWay}"/>
 
                 </StackLayout>
             </Frame>

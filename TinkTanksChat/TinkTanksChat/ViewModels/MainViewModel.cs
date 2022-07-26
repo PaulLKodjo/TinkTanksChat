@@ -80,7 +80,8 @@ namespace BuildChat.ViewModels
             set
             {
                 _isBusy = value;
-                OnPropertyChanged();
+                OnPropertyChanged("IsBusy");
+                OnPropertyChanged("NotIsBusy");
             }
         }
 
