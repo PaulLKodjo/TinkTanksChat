@@ -2,12 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" 
           android:versionCode="1" 
           android:versionName="1.0" 
-          package="com.kola.tinktanks">
+          package="com.kola.widevibez">
   <uses-sdk android:minSdkVersion="21" 
             android:targetSdkVersion="27" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <application android:label="Tink Tanks">
+  <application android:label="Wide Vibez">
      <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-5539185599858824~8378771179"/>
